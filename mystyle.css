@@ -45,13 +45,57 @@ div {
     margin-right: 10px;
     border-style: solid;
 }
-
-
 .mid-page {
     grid-row: 2/3;
     display: grid;
+    grid-template-rows: 272px 100px;
     
 }
+.google-logo {
+    margin: 0 auto;
+    margin-top: 150px;
+    grid-row: 1/2;
+}
+
+.search-bar {
+    margin: 0 auto;
+    grid-row: 2/3;
+    border-width: thin;
+    border-color:rgb(195, 195, 195);
+    margin-top: 50px;
+    width: 600px;
+    border-radius: 30px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+
+}
+
+#search-icon {
+    grid-column: 1/2;
+    margin: 15px;
+    width: 15px;
+    height: 15px;
+}
+
+#search-box {
+    grid-column: 2/3;
+    height: 85%; 
+    border: 0px;
+    font-size: 15pt;
+}
+
+#search-box:focus {
+    outline: none;
+}
+
+
+#voice-icon {
+    grid-column: 3/4;
+    margin-top: 10px;
+    height: 28px;
+}
+
 
 
 
