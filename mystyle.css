@@ -16,7 +16,7 @@ div {
     background-color: lightcoral;
     border-style: none;
     height: 100%;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 50px 1fr 95px;
 }
 
 .topbar {
@@ -48,7 +48,7 @@ div {
 .mid-page {
     grid-row: 2/3;
     display: grid;
-    grid-template-rows: 272px 100px;
+    grid-template-rows: 272px 100px 300px;
     
 }
 .google-logo {
@@ -96,6 +96,49 @@ div {
     height: 28px;
 }
 
+.mid-page-buttons {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 150px 20px 150px 1fr;
+}
 
+#mid-left-button {
+    grid-column: 2/3;
+    height: 40px;
+    background-color: #f8f9fa;
+}
 
+#mid-right-button {
+    grid-column: 4/5;
+    height: 40px;
+    background-color: #f8f9fa;
+}
+
+.bottom-page {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#country {
+    margin-left: 20px;
+}
+
+.bottom-links {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: grid;
+    grid-template-columns: 390px 1fr 390px;
+}
+.bottom-links-left {
+    grid-column: 1/2;
+    display: flex;
+    gap: 20px;
+}
+.bottom-links-right {
+    grid-column: 3/4;
+
+    display:flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
 
